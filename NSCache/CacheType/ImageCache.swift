@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ImageCache: ImageCacheType {
+class ImageCache: NSObject, ImageCacheType {
     
     struct Config {
         

@@ -14,12 +14,14 @@ class NSCacheTableViewCell: UITableViewCell {
     
     // MARK: VARIABLES
     var model: NSCacheImageModel = NSCacheImageModel()
+    var imagesCache: ImageCache = ImageCache()
     
     // MARK: UI ELEMENTS
     var image: UIImageView = UIImageView()
     var titleSubtitleStackView: UIStackView = UIStackView()
     var titleLabel: UILabel = UILabel()
     var subtitleLabel: UILabel = UILabel()
+    var deleteImageFromCacheButton: UIButton = UIButton()
 
     func setupUI() {
         
@@ -37,7 +39,6 @@ class NSCacheTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.titleSubtitleStackView)
         self.titleSubtitleStackView.snp.makeConstraints { make in
             make.left.equalTo(self.image.snp.right).offset(15)
-            make.right.equalTo(self.contentView).offset(-15)
             make.centerY.equalTo(self.contentView)
         }
         
@@ -55,6 +56,20 @@ class NSCacheTableViewCell: UITableViewCell {
             make.left.right.equalTo(self.titleSubtitleStackView)
         }
         
+        self.deleteImageFromCacheButton.backgroundColor = .red
+        self.deleteImageFromCacheButton.tintColor = .white
+        self.deleteImageFromCacheButton.layer.cornerRadius = 17.5
+        self.deleteImageFromCacheButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        self.deleteImageFromCacheButton.setImage(UIImage(systemName: "trash"), for: .normal)
+        self.deleteImageFromCacheButton.addTarget(self, action: #selector(self.deleteImageFromCache), for: .touchUpInside)
+        self.contentView.addSubview(self.deleteImageFromCacheButton)
+        self.deleteImageFromCacheButton.snp.makeConstraints { make in
+            make.left.equalTo(self.titleSubtitleStackView.snp.right).offset(15)
+            make.right.equalTo(self.contentView).offset(-15)
+            make.centerY.equalTo(self.contentView)
+            make.size.equalTo(CGSize(width: 35, height: 35))
+        }
+        
     }
     
     func configure(withModel model: NSCacheImageModel, andCache imagesCache: ImageCache) {
@@ -62,6 +77,7 @@ class NSCacheTableViewCell: UITableViewCell {
         self.setupUI()
         
         self.model = model
+        self.imagesCache = imagesCache
         self.titleLabel.text = model.title
         self.subtitleLabel.text = model.subtitle
         
@@ -82,11 +98,11 @@ class NSCacheTableViewCell: UITableViewCell {
         
     }
     
-    func deleteImageFromCache(imagesCache: ImageCache) {
+    @objc func deleteImageFromCache() {
         
         if let cacheImageURL = self.model.createCacheImageURL() {
             print("DELETING IMAGE FROM CACHE WITH URL: \(cacheImageURL.absoluteString)")
-            imagesCache.removeImage(for: cacheImageURL)
+            self.imagesCache.removeImage(for: cacheImageURL)
         }
         
     }

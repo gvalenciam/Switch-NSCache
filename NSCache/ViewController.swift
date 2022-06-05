@@ -89,7 +89,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if editingStyle == .delete {
             
             if let cell = tableView.cellForRow(at: indexPath) as? NSCacheTableViewCell {
-                cell.deleteImageFromCache(imagesCache: self.imagesCache)
+                cell.deleteImageFromCache()
             }
             
         }
