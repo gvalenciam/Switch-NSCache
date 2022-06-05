@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		499666AF6A2450E4FBBC5388 /* Pods_NSCache_NSCacheUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB8C13757DCF07F8F904517 /* Pods_NSCache_NSCacheUITests.framework */; };
+		567CFA1E283D73CA005EB2C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CFA1D283D73CA005EB2C9 /* AppDelegate.swift */; };
+		567CFA20283D73CA005EB2C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CFA1F283D73CA005EB2C9 /* SceneDelegate.swift */; };
+		567CFA22283D73CA005EB2C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CFA21283D73CA005EB2C9 /* ViewController.swift */; };
+		567CFA25283D73CA005EB2C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567CFA23283D73CA005EB2C9 /* Main.storyboard */; };
+		567CFA27283D73CD005EB2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567CFA26283D73CD005EB2C9 /* Assets.xcassets */; };
+		567CFA2A283D73CD005EB2C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567CFA28283D73CD005EB2C9 /* LaunchScreen.storyboard */; };
+		567CFA35283D73CD005EB2C9 /* NSCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CFA34283D73CD005EB2C9 /* NSCacheTests.swift */; };
+		567CFA3F283D73CD005EB2C9 /* NSCacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CFA3E283D73CD005EB2C9 /* NSCacheUITests.swift */; };
+		567CFA41283D73CD005EB2C9 /* NSCacheUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CFA40283D73CD005EB2C9 /* NSCacheUITestsLaunchTests.swift */; };
+		56868DA9284C581700190D72 /* NSCacheTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56868DA8284C581700190D72 /* NSCacheTableViewCell.swift */; };
+		56868DAB284C586600190D72 /* NSCacheImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56868DAA284C586600190D72 /* NSCacheImageModel.swift */; };
+		56868DAD284C5A5200190D72 /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56868DAC284C5A5200190D72 /* SwiftExtensions.swift */; };
+		56868DB0284C5E7400190D72 /* ImageCacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56868DAF284C5E7400190D72 /* ImageCacheType.swift */; };
+		56868DB2284C5F2F00190D72 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56868DB1284C5F2F00190D72 /* ImageCache.swift */; };
+		697C754CB969DC7DEEB2625F /* Pods_NSCacheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E1F2530E9B006C4FBF0E6A /* Pods_NSCacheTests.framework */; };
+		A3DD6A564B4C5E41DED7B749 /* Pods_NSCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E44A174AAAC1661C18DCA73 /* Pods_NSCache.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		567CFA31283D73CD005EB2C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 567CFA12283D73CA005EB2C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 567CFA19283D73CA005EB2C9;
+			remoteInfo = NSCache;
+		};
+		567CFA3B283D73CD005EB2C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 567CFA12283D73CA005EB2C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 567CFA19283D73CA005EB2C9;
+			remoteInfo = NSCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A951F8C9C394B79ED8C5263 /* Pods-NSCache-NSCacheUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCache-NSCacheUITests.release.xcconfig"; path = "Target Support Files/Pods-NSCache-NSCacheUITests/Pods-NSCache-NSCacheUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2CB8C13757DCF07F8F904517 /* Pods_NSCache_NSCacheUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSCache_NSCacheUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E1F2530E9B006C4FBF0E6A /* Pods_NSCacheTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSCacheTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E44A174AAAC1661C18DCA73 /* Pods_NSCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		567CFA1A283D73CA005EB2C9 /* NSCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		567CFA1D283D73CA005EB2C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		567CFA1F283D73CA005EB2C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		567CFA21283D73CA005EB2C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		567CFA24283D73CA005EB2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		567CFA26283D73CD005EB2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		567CFA29283D73CD005EB2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		567CFA2B283D73CD005EB2C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		567CFA30283D73CD005EB2C9 /* NSCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		567CFA34283D73CD005EB2C9 /* NSCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheTests.swift; sourceTree = "<group>"; };
+		567CFA3A283D73CD005EB2C9 /* NSCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSCacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		567CFA3E283D73CD005EB2C9 /* NSCacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheUITests.swift; sourceTree = "<group>"; };
+		567CFA40283D73CD005EB2C9 /* NSCacheUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56868DA8284C581700190D72 /* NSCacheTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheTableViewCell.swift; sourceTree = "<group>"; };
+		56868DAA284C586600190D72 /* NSCacheImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheImageModel.swift; sourceTree = "<group>"; };
+		56868DAC284C5A5200190D72 /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		56868DAF284C5E7400190D72 /* ImageCacheType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheType.swift; sourceTree = "<group>"; };
+		56868DB1284C5F2F00190D72 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		6F59DD3DE0AE0113852683F2 /* Pods-NSCache-NSCacheUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCache-NSCacheUITests.debug.xcconfig"; path = "Target Support Files/Pods-NSCache-NSCacheUITests/Pods-NSCache-NSCacheUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0AFFB5FB5423C153A88A7A6 /* Pods-NSCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCache.debug.xcconfig"; path = "Target Support Files/Pods-NSCache/Pods-NSCache.debug.xcconfig"; sourceTree = "<group>"; };
+		C4F610432923FF517308F07A /* Pods-NSCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCache.release.xcconfig"; path = "Target Support Files/Pods-NSCache/Pods-NSCache.release.xcconfig"; sourceTree = "<group>"; };
+		CAF2F997D4A83FDF6D0D2A6E /* Pods-NSCacheTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCacheTests.release.xcconfig"; path = "Target Support Files/Pods-NSCacheTests/Pods-NSCacheTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC872CDD639FA6CD7CE8FD59 /* Pods-NSCacheTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCacheTests.debug.xcconfig"; path = "Target Support Files/Pods-NSCacheTests/Pods-NSCacheTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		567CFA17283D73CA005EB2C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DD6A564B4C5E41DED7B749 /* Pods_NSCache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		567CFA2D283D73CD005EB2C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697C754CB969DC7DEEB2625F /* Pods_NSCacheTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		567CFA37283D73CD005EB2C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499666AF6A2450E4FBBC5388 /* Pods_NSCache_NSCacheUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		567CFA11283D73CA005EB2C9 = {
+			isa = PBXGroup;
+			children = (
+				567CFA1C283D73CA005EB2C9 /* NSCache */,
+				567CFA33283D73CD005EB2C9 /* NSCacheTests */,
+				567CFA3D283D73CD005EB2C9 /* NSCacheUITests */,
+				567CFA1B283D73CA005EB2C9 /* Products */,
+				74D13CDF62B853D59E3521F7 /* Pods */,
+				628B2E6877B240DAB89B858B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		567CFA1B283D73CA005EB2C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				567CFA1A283D73CA005EB2C9 /* NSCache.app */,
+				567CFA30283D73CD005EB2C9 /* NSCacheTests.xctest */,
+				567CFA3A283D73CD005EB2C9 /* NSCacheUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		567CFA1C283D73CA005EB2C9 /* NSCache */ = {
+			isa = PBXGroup;
+			children = (
+				56868DB5284C7DFA00190D72 /* Extensions */,
+				56868DB4284C7DE700190D72 /* Models */,
+				56868DB3284C7DDC00190D72 /* Cells */,
+				56868DAE284C5E5E00190D72 /* CacheType */,
+				567CFA1D283D73CA005EB2C9 /* AppDelegate.swift */,
+				567CFA1F283D73CA005EB2C9 /* SceneDelegate.swift */,
+				567CFA21283D73CA005EB2C9 /* ViewController.swift */,
+				567CFA23283D73CA005EB2C9 /* Main.storyboard */,
+				567CFA26283D73CD005EB2C9 /* Assets.xcassets */,
+				567CFA28283D73CD005EB2C9 /* LaunchScreen.storyboard */,
+				567CFA2B283D73CD005EB2C9 /* Info.plist */,
+			);
+			path = NSCache;
+			sourceTree = "<group>";
+		};
+		567CFA33283D73CD005EB2C9 /* NSCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				567CFA34283D73CD005EB2C9 /* NSCacheTests.swift */,
+			);
+			path = NSCacheTests;
+			sourceTree = "<group>";
+		};
+		567CFA3D283D73CD005EB2C9 /* NSCacheUITests */ = {
+			isa = PBXGroup;
+			children = (
+				567CFA3E283D73CD005EB2C9 /* NSCacheUITests.swift */,
+				567CFA40283D73CD005EB2C9 /* NSCacheUITestsLaunchTests.swift */,
+			);
+			path = NSCacheUITests;
+			sourceTree = "<group>";
+		};
+		56868DAE284C5E5E00190D72 /* CacheType */ = {
+			isa = PBXGroup;
+			children = (
+				56868DAF284C5E7400190D72 /* ImageCacheType.swift */,
+				56868DB1284C5F2F00190D72 /* ImageCache.swift */,
+			);
+			path = CacheType;
+			sourceTree = "<group>";
+		};
+		56868DB3284C7DDC00190D72 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				56868DA8284C581700190D72 /* NSCacheTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		56868DB4284C7DE700190D72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56868DAA284C586600190D72 /* NSCacheImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56868DB5284C7DFA00190D72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56868DAC284C5A5200190D72 /* SwiftExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		628B2E6877B240DAB89B858B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E44A174AAAC1661C18DCA73 /* Pods_NSCache.framework */,
+				2CB8C13757DCF07F8F904517 /* Pods_NSCache_NSCacheUITests.framework */,
+				36E1F2530E9B006C4FBF0E6A /* Pods_NSCacheTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74D13CDF62B853D59E3521F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0AFFB5FB5423C153A88A7A6 /* Pods-NSCache.debug.xcconfig */,
+				C4F610432923FF517308F07A /* Pods-NSCache.release.xcconfig */,
+				6F59DD3DE0AE0113852683F2 /* Pods-NSCache-NSCacheUITests.debug.xcconfig */,
+				0A951F8C9C394B79ED8C5263 /* Pods-NSCache-NSCacheUITests.release.xcconfig */,
+				DC872CDD639FA6CD7CE8FD59 /* Pods-NSCacheTests.debug.xcconfig */,
+				CAF2F997D4A83FDF6D0D2A6E /* Pods-NSCacheTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		567CFA19283D73CA005EB2C9 /* NSCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 567CFA44283D73CD005EB2C9 /* Build configuration list for PBXNativeTarget "NSCache" */;
+			buildPhases = (
+				AC8A94EC736A69B8534EAF68 /* [CP] Check Pods Manifest.lock */,
+				567CFA16283D73CA005EB2C9 /* Sources */,
+				567CFA17283D73CA005EB2C9 /* Frameworks */,
+				567CFA18283D73CA005EB2C9 /* Resources */,
+				4B4808CE1755564D2E6F4DBD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSCache;
+			productName = NSCache;
+			productReference = 567CFA1A283D73CA005EB2C9 /* NSCache.app */;
+			productType = "com.apple.product-type.application";
+		};
+		567CFA2F283D73CD005EB2C9 /* NSCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 567CFA47283D73CD005EB2C9 /* Build configuration list for PBXNativeTarget "NSCacheTests" */;
+			buildPhases = (
+				D14CA5A72A47B990CA5E2B9E /* [CP] Check Pods Manifest.lock */,
+				567CFA2C283D73CD005EB2C9 /* Sources */,
+				567CFA2D283D73CD005EB2C9 /* Frameworks */,
+				567CFA2E283D73CD005EB2C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				567CFA32283D73CD005EB2C9 /* PBXTargetDependency */,
+			);
+			name = NSCacheTests;
+			productName = NSCacheTests;
+			productReference = 567CFA30283D73CD005EB2C9 /* NSCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		567CFA39283D73CD005EB2C9 /* NSCacheUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 567CFA4A283D73CD005EB2C9 /* Build configuration list for PBXNativeTarget "NSCacheUITests" */;
+			buildPhases = (
+				51FCF545203CD2CCD7E9282B /* [CP] Check Pods Manifest.lock */,
+				567CFA36283D73CD005EB2C9 /* Sources */,
+				567CFA37283D73CD005EB2C9 /* Frameworks */,
+				567CFA38283D73CD005EB2C9 /* Resources */,
+				D6DE2431C46C9484F6D99076 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				567CFA3C283D73CD005EB2C9 /* PBXTargetDependency */,
+			);
+			name = NSCacheUITests;
+			productName = NSCacheUITests;
+			productReference = 567CFA3A283D73CD005EB2C9 /* NSCacheUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		567CFA12283D73CA005EB2C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					567CFA19283D73CA005EB2C9 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					567CFA2F283D73CD005EB2C9 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 567CFA19283D73CA005EB2C9;
+					};
+					567CFA39283D73CD005EB2C9 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 567CFA19283D73CA005EB2C9;
+					};
+				};
+			};
+			buildConfigurationList = 567CFA15283D73CA005EB2C9 /* Build configuration list for PBXProject "NSCache" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 567CFA11283D73CA005EB2C9;
+			productRefGroup = 567CFA1B283D73CA005EB2C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				567CFA19283D73CA005EB2C9 /* NSCache */,
+				567CFA2F283D73CD005EB2C9 /* NSCacheTests */,
+				567CFA39283D73CD005EB2C9 /* NSCacheUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		567CFA18283D73CA005EB2C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				567CFA2A283D73CD005EB2C9 /* LaunchScreen.storyboard in Resources */,
+				567CFA27283D73CD005EB2C9 /* Assets.xcassets in Resources */,
+				567CFA25283D73CA005EB2C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		567CFA2E283D73CD005EB2C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		567CFA38283D73CD005EB2C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B4808CE1755564D2E6F4DBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSCache/Pods-NSCache-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSCache/Pods-NSCache-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NSCache/Pods-NSCache-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51FCF545203CD2CCD7E9282B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSCache-NSCacheUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC8A94EC736A69B8534EAF68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSCache-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D14CA5A72A47B990CA5E2B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSCacheTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6DE2431C46C9484F6D99076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSCache-NSCacheUITests/Pods-NSCache-NSCacheUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSCache-NSCacheUITests/Pods-NSCache-NSCacheUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NSCache-NSCacheUITests/Pods-NSCache-NSCacheUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		567CFA16283D73CA005EB2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56868DAB284C586600190D72 /* NSCacheImageModel.swift in Sources */,
+				567CFA22283D73CA005EB2C9 /* ViewController.swift in Sources */,
+				56868DB2284C5F2F00190D72 /* ImageCache.swift in Sources */,
+				56868DA9284C581700190D72 /* NSCacheTableViewCell.swift in Sources */,
+				567CFA1E283D73CA005EB2C9 /* AppDelegate.swift in Sources */,
+				567CFA20283D73CA005EB2C9 /* SceneDelegate.swift in Sources */,
+				56868DAD284C5A5200190D72 /* SwiftExtensions.swift in Sources */,
+				56868DB0284C5E7400190D72 /* ImageCacheType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		567CFA2C283D73CD005EB2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				567CFA35283D73CD005EB2C9 /* NSCacheTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		567CFA36283D73CD005EB2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				567CFA41283D73CD005EB2C9 /* NSCacheUITestsLaunchTests.swift in Sources */,
+				567CFA3F283D73CD005EB2C9 /* NSCacheUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		567CFA32283D73CD005EB2C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 567CFA19283D73CA005EB2C9 /* NSCache */;
+			targetProxy = 567CFA31283D73CD005EB2C9 /* PBXContainerItemProxy */;
+		};
+		567CFA3C283D73CD005EB2C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 567CFA19283D73CA005EB2C9 /* NSCache */;
+			targetProxy = 567CFA3B283D73CD005EB2C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		567CFA23283D73CA005EB2C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				567CFA24283D73CA005EB2C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		567CFA28283D73CD005EB2C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				567CFA29283D73CD005EB2C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		567CFA42283D73CD005EB2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		567CFA43283D73CD005EB2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		567CFA45283D73CD005EB2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AFFB5FB5423C153A88A7A6 /* Pods-NSCache.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76P9HDKDP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NSCache/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		567CFA46283D73CD005EB2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F610432923FF517308F07A /* Pods-NSCache.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76P9HDKDP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NSCache/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		567CFA48283D73CD005EB2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC872CDD639FA6CD7CE8FD59 /* Pods-NSCacheTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76P9HDKDP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSCache.app/NSCache";
+			};
+			name = Debug;
+		};
+		567CFA49283D73CD005EB2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF2F997D4A83FDF6D0D2A6E /* Pods-NSCacheTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76P9HDKDP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSCache.app/NSCache";
+			};
+			name = Release;
+		};
+		567CFA4B283D73CD005EB2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F59DD3DE0AE0113852683F2 /* Pods-NSCache-NSCacheUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76P9HDKDP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSCacheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NSCache;
+			};
+			name = Debug;
+		};
+		567CFA4C283D73CD005EB2C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A951F8C9C394B79ED8C5263 /* Pods-NSCache-NSCacheUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76P9HDKDP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NSCacheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NSCache;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		567CFA15283D73CA005EB2C9 /* Build configuration list for PBXProject "NSCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567CFA42283D73CD005EB2C9 /* Debug */,
+				567CFA43283D73CD005EB2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		567CFA44283D73CD005EB2C9 /* Build configuration list for PBXNativeTarget "NSCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567CFA45283D73CD005EB2C9 /* Debug */,
+				567CFA46283D73CD005EB2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		567CFA47283D73CD005EB2C9 /* Build configuration list for PBXNativeTarget "NSCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567CFA48283D73CD005EB2C9 /* Debug */,
+				567CFA49283D73CD005EB2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		567CFA4A283D73CD005EB2C9 /* Build configuration list for PBXNativeTarget "NSCacheUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567CFA4B283D73CD005EB2C9 /* Debug */,
+				567CFA4C283D73CD005EB2C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 567CFA12283D73CA005EB2C9 /* Project object */;
+}

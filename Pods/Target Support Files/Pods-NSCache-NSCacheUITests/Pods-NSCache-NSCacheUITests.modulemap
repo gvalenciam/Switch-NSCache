@@ -1,0 +1,6 @@
+framework module Pods_NSCache_NSCacheUITests {
+  umbrella header "Pods-NSCache-NSCacheUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
