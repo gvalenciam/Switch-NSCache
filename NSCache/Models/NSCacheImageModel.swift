@@ -24,13 +24,7 @@ class NSCacheImageModel {
     // MARK: UTILS
     func createCacheImageURL() -> URL? {
         
-//        if let completeImageURL = URL(string: (self.imageURL + self.cacheId)) {
-//            return completeImageURL
-//        } else {
-//            return nil
-//        }
-        
-        if let completeImageURL = URL(string: (self.imageURL)) {
+        if let completeImageURL = URL(string: (self.imageURL + self.cacheId)) {
             return completeImageURL
         } else {
             return nil
