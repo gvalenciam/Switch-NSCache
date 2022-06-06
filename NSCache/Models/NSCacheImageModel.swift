@@ -22,6 +22,9 @@ class NSCacheImageModel {
     }
     
     // MARK: UTILS
+    
+    /// Function that creates an image ID from imageURL + imageCacheId that will be used as key for the iamges cache
+    /// - Returns: image URL for cache
     func createCacheImageURL() -> URL? {
         
         if let completeImageURL = URL(string: (self.imageURL + self.cacheId)) {

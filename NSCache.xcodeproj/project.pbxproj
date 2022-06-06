@@ -22,6 +22,7 @@
 		56868DAD284C5A5200190D72 /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56868DAC284C5A5200190D72 /* SwiftExtensions.swift */; };
 		56868DB0284C5E7400190D72 /* ImageCacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56868DAF284C5E7400190D72 /* ImageCacheType.swift */; };
 		56868DB2284C5F2F00190D72 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56868DB1284C5F2F00190D72 /* ImageCache.swift */; };
+		56C8C3EF284DB0090000F2C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8C3EE284DB0090000F2C4 /* Constants.swift */; };
 		697C754CB969DC7DEEB2625F /* Pods_NSCacheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E1F2530E9B006C4FBF0E6A /* Pods_NSCacheTests.framework */; };
 		A3DD6A564B4C5E41DED7B749 /* Pods_NSCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E44A174AAAC1661C18DCA73 /* Pods_NSCache.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		56868DAC284C5A5200190D72 /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
 		56868DAF284C5E7400190D72 /* ImageCacheType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheType.swift; sourceTree = "<group>"; };
 		56868DB1284C5F2F00190D72 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		56C8C3EE284DB0090000F2C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6F59DD3DE0AE0113852683F2 /* Pods-NSCache-NSCacheUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCache-NSCacheUITests.debug.xcconfig"; path = "Target Support Files/Pods-NSCache-NSCacheUITests/Pods-NSCache-NSCacheUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0AFFB5FB5423C153A88A7A6 /* Pods-NSCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCache.debug.xcconfig"; path = "Target Support Files/Pods-NSCache/Pods-NSCache.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F610432923FF517308F07A /* Pods-NSCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCache.release.xcconfig"; path = "Target Support Files/Pods-NSCache/Pods-NSCache.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				567CFA26283D73CD005EB2C9 /* Assets.xcassets */,
 				567CFA28283D73CD005EB2C9 /* LaunchScreen.storyboard */,
 				567CFA2B283D73CD005EB2C9 /* Info.plist */,
+				56C8C3EE284DB0090000F2C4 /* Constants.swift */,
 			);
 			path = NSCache;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				567CFA20283D73CA005EB2C9 /* SceneDelegate.swift in Sources */,
 				56868DAD284C5A5200190D72 /* SwiftExtensions.swift in Sources */,
 				56868DB0284C5E7400190D72 /* ImageCacheType.swift in Sources */,
+				56C8C3EF284DB0090000F2C4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

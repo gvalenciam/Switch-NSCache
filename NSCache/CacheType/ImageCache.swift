@@ -21,6 +21,8 @@ class ImageCache: NSObject, ImageCacheType {
     
     private let config: Config
     
+    
+    /// Images cache variable
     private lazy var imageCache: NSCache<AnyObject, AnyObject> = {
         let cache = NSCache<AnyObject, AnyObject>()
         cache.countLimit = self.config.countLimit

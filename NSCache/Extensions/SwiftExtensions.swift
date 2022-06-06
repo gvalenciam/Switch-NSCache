@@ -10,7 +10,20 @@ import UIKit
 
 extension UIImageView {
     
-    func downloaded(from url: URL, withCache cache: ImageCache, imageCacheId: URL, contentMode mode: ContentMode = .scaleAspectFit, withTintColor: Bool = false) {
+    
+    /// Function that downloads an image with the given URL.
+    /// After image is downloaded it is saved into cache with the given iamgeCacheId and then assign in to the image view
+    /// - Parameters:
+    ///   - url: Image URL
+    ///   - cache: Images cache reference
+    ///   - imageCacheId: Key reference that will be used for the downloaded iamge
+    ///   - mode: image content mode
+    ///   - withTintColor: image tint color
+    func downloaded(from url: URL,
+                    withCache cache: ImageCache,
+                    imageCacheId: URL,
+                    contentMode mode: ContentMode = .scaleAspectFit,
+                    withTintColor: Bool = false) {
         
         self.contentMode = mode
         
@@ -43,6 +56,14 @@ extension UIImageView {
         
     }
     
+    
+    /// Wrapper function that takes a string link and transforms it to URL (if valid) and then uses the main downloaded function
+    /// - Parameters:
+    ///   - link: String URL
+    ///   - cache: Images cache reference
+    ///   - imageCacheId: Key reference that will be used for the downloaded iamge
+    ///   - mode: Image content mode
+    ///   - withTintColor: image tint color
     func downloaded(from link: String,
                     withCache cache: ImageCache,
                     imageCacheId: URL,
